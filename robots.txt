@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /support.html
+Allow: /
+
+Sitemap: https://www.jsfrancislegacy.com/sitemap.xml
