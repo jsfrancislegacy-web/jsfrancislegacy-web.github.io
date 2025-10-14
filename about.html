@@ -1,127 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>About | JSFrancisLegacy Computer Solutions</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
-:root{
-  --bg1:#003366;--bg2:#0077cc;--text:#fff;--muted:#e0e0e0;
-  --blue:#335fff;--teal:#00a5a5;--panel:rgba(0,0,0,.18);--border:rgba(255,255,255,.12);
-}
+:root{--bg1:#003366;--bg2:#0077cc;--text:#fff;--muted:#e0e0e0;--panel:rgba(0,0,0,.18);--border:rgba(255,255,255,.12);}
 *{box-sizing:border-box}
-body{
-  margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--text);
-  background:linear-gradient(135deg,var(--bg1),var(--bg2));
-  min-height:100vh;padding:24px;padding-top:110px;
-  display:flex;align-items:center;justify-content:center;
-}
-/* Topbar */
-.topbar{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:12px 16px;
-}
-.nav-left,.nav-right{display:flex;gap:10px;align-items:center}
-.brand{
-  position:absolute;left:50%;transform:translateX(-50%);
-  display:flex;align-items:center;justify-content:center;height:72px;
-}
-.top-logo{
-  max-width:190px;display:block;
-  filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));
-}
-.nav-btn{
-  background:var(--blue);color:#fff;text-decoration:none;font-weight:700;
-  border-radius:10px;padding:12px 16px;box-shadow:0 3px 12px rgba(0,0,0,.25);
-  transition:transform .05s,opacity .2s;
-}
-.nav-btn:hover{opacity:.92}.nav-btn:active{transform:scale(.98)}
-.card{
-  width:100%;max-width:980px;background:rgba(255,255,255,0.06);
-  border:1px solid var(--border);border-radius:16px;padding:28px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.25);backdrop-filter:blur(4px);
-}
-header{text-align:center;margin-bottom:16px}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--text);
+background:linear-gradient(135deg,var(--bg1),var(--bg2));
+min-height:100vh;padding:24px;padding-top:96px;display:flex;flex-direction:column;align-items:center;}
+/* Top logo only */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:center;align-items:center;padding:12px 16px;}
+.top-logo{max-width:190px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));}
+.card{width:100%;max-width:980px;background:rgba(255,255,255,.06);border:1px solid var(--border);
+border-radius:16px;padding:24px 24px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25);backdrop-filter:blur(4px);}
+header{text-align:center;margin-bottom:14px}
 h1{margin:6px 0 8px;font-size:2rem}.subtitle{margin:0;color:var(--muted)}
-.grid{display:grid;gap:18px}
-.panel{
-  background:var(--panel);border:1px solid var(--border);
-  border-radius:12px;padding:18px;
-}
-h2{margin:0 0 8px;font-size:1.25rem}
-p{margin:0 0 10px;color:var(--muted);line-height:1.6}
-.list{margin:0;padding-left:18px}
-.list li{margin:6px 0;color:var(--muted)}
-footer{margin-top:18px;text-align:center;color:var(--muted);font-size:.9rem}
-@media(max-width:640px){
-  body{padding-top:100px}
-  .top-logo{max-width:160px}
-  .nav-btn{padding:12px 14px;font-size:.95rem}
-  .nav-left,.nav-right{gap:8px}
-}
+.section{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px;margin-top:14px}
+.section h2{margin:0 0 8px;font-size:1.25rem}
+p,li{color:var(--muted);line-height:1.6}
+.footer-nav{margin:28px 0 8px;text-align:center;color:#cfd8e3}
+.footer-nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:600;opacity:.95}
+.footer-nav a:hover{text-decoration:underline}
+@media(max-width:640px){body{padding-top:88px}.top-logo{max-width:160px}}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="nav-left">
-    <a href="index.html" class="nav-btn">Home</a>
-    <a href="about.html" class="nav-btn">About</a>
+  <div class="topbar">
+    <a href="index.html" aria-label="Home"><img src="JSFrancisLegacyLogoWS.png" alt="JSFrancisLegacy Logo" class="top-logo"></a>
   </div>
 
-  <a class="brand" href="index.html">
-    <img src="JSFrancisLegacyLogoWS.png" alt="JSFrancisLegacy Logo" class="top-logo">
-  </a>
+  <main class="card">
+    <header>
+      <h1>About JSFrancisLegacy Computer Solutions</h1>
+      <p class="subtitle">Trusted IT help — remote and in-house — at a reasonable price.</p>
+    </header>
 
-  <div class="nav-right">
-    <a href="services.html" class="nav-btn">Services</a>
-    <a href="contact.html" class="nav-btn">Contact</a>
-    <a href="remote.html" class="nav-btn">Remote</a>
-  </div>
-</div>
-
-<main class="card">
-  <header>
-    <h1>About JSFrancisLegacy Computer Solutions</h1>
-    <p class="subtitle">Trusted IT help — remote and in-house — at a reasonable price.</p>
-  </header>
-
-  <section class="grid">
-    <div class="panel">
+    <section class="section">
       <h2>Who I Am</h2>
-      <p>
-        I’ve worked in the IT field for <strong>18+ years</strong>, but my love of technology started
-        when I was just <strong>5 years old</strong>. Over the years, I’ve helped people and small
-        businesses fix problems fast, stay secure, and make the most of their devices.
-      </p>
-    </div>
+      <p>I’ve worked in the IT field for <strong>18+ years</strong>, but my love of technology started when I was <strong>5</strong>. I help people and small businesses fix problems fast, stay secure, and get the most from their devices.</p>
+    </section>
 
-    <div class="panel">
+    <section class="section">
       <h2>What I Do</h2>
-      <ul class="list">
-        <li><strong>Remote & In-House Support:</strong> troubleshooting, tune-ups, setup, and guidance wherever you are.</li>
-        <li><strong>New Computer Recommendations:</strong> I’ll help you price out the right machine for your needs — no upsell, just honest guidance.</li>
-        <li><strong>Ongoing Care:</strong> updates, backups, and best-practice advice to keep things running smoothly.</li>
+      <ul>
+        <li><strong>Remote & In-House Support:</strong> troubleshooting, tune-ups, setup, and guidance.</li>
+        <li><strong>New Computer Recommendations:</strong> honest pricing help—no upsell.</li>
+        <li><strong>Ongoing Care:</strong> updates, backups, and best-practice advice.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="panel">
+    <section class="section">
       <h2>Why I Started This</h2>
-      <p>
-        As times change, more people end up paying big prices to big companies. I believe there’s a better way — 
-        the <strong>mom-and-pop approach</strong> that genuinely looks after clients and delivers 
-        <strong>great service at a reasonable price</strong>.
-      </p>
-      <p>
-        My goal is to <strong>build trust</strong> and create <strong>long-lasting relationships</strong> 
-        so you always have someone you can rely on for honest, effective tech help.
-      </p>
-    </div>
-  </section>
+      <p>People often overpay big companies for simple help. I believe in the <strong>mom-and-pop approach</strong>—genuine service at a fair price. My goal is to build trust and long-lasting relationships so you always have reliable tech help.</p>
+    </section>
+  </main>
 
-  <footer>&copy; 2025 JSFrancisLegacy Computer Solutions — All Rights Reserved</footer>
-</main>
+  <footer class="footer-nav">
+    <a href="index.html">Home</a> •
+    <a href="remote.html">Remote</a> •
+    <a href="services.html">Services</a> •
+    <a href="contact.html">Contact</a>
+  </footer>
 </body>
 </html>
 
