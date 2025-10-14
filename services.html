@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Services | JSFrancisLegacy Computer Solutions</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{--bg1:#003366;--bg2:#0077cc;--text:#fff;--muted:#e0e0e0;--blue:#335fff;--teal:#00a5a5;--panel:rgba(0,0,0,.18);--border:rgba(255,255,255,.12);}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--text);
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:24px;padding-top:110px;
+}
+/* Topbar */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;
+ align-items:center;justify-content:space-between;padding:12px 16px;}
+.nav-left,.nav-right{display:flex;gap:10px;align-items:center}
+.brand{position:absolute;left:50%;transform:translateX(-50%);
+ display:flex;align-items:center;justify-content:center;height:72px;}
+.top-logo{max-width:190px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));}
+.nav-btn{background:var(--blue);color:#fff;text-decoration:none;font-weight:700;
+ border-radius:10px;padding:12px 16px;box-shadow:0 3px 12px rgba(0,0,0,.25);
+ transition:transform .05s,opacity .2s;}
+.nav-btn:hover{opacity:.92}.nav-btn:active{transform:scale(.98)}
+.wrap{width:100%;max-width:980px;background:rgba(255,255,255,.06);
+ border:1px solid var(--border);border-radius:16px;padding:28px;
+ box-shadow:0 10px 30px rgba(0,0,0,0.25);backdrop-filter:blur(4px);}
+header{text-align:center;margin-bottom:16px}
+h1{margin:6px 0 8px;font-size:2rem}.subtitle{margin:0;color:var(--muted)}
+.grid{display:grid;gap:18px;margin-top:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px}
+.card h2{margin:0 0 6px;font-size:1.15rem}
+.price{font-weight:800;margin:6px 0 10px}
+.desc{color:var(--muted);margin:0 0 10px;line-height:1.55}
+ul{margin:0;padding-left:18px}li{color:var(--muted);margin:6px 0}
+footer{margin-top:18px;text-align:center;color:var(--muted);font-size:.9rem}
+@media(max-width:640px){
+  body{padding-top:100px}.top-logo{max-width:160px}
+  .nav-btn{padding:12px 14px;font-size:.95rem}.nav-left,.nav-right{gap:8px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="nav-left">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+  </div>
+  <a class="brand" href="index.html"><img src="JSFrancisLegacyLogoWS.png" alt="JSFrancisLegacy Logo" class="top-logo"></a>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-btn">Contact</a>
+    <a href="remote.html" class="nav-btn">Remote</a>
+  </div>
+</div>
+
+<main class="wrap">
+  <header>
+    <h1>Services & Pricing</h1>
+    <p class="subtitle">Fair, honest pricing — remote or in-house support when you need it.</p>
+  </header>
+
+  <section class="grid">
+    <article class="card">
+      <h2>Diagnostics & Troubleshooting</h2>
+      <p class="desc">For software or hardware issues — available remote or in-person.</p>
+      <p class="price">First 15 minutes are <strong>FREE</strong>.</p>
+      <ul>
+        <li>After the first 15 minutes, rates apply to both remote and in-person support.</li>
+        <li>Starting at <strong>$35/hr remote</strong>, <strong>$50/hr in-person</strong>.</li>
+        <li>Includes full issue assessment and resolution recommendations.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Virus & Malware Removal</h2>
+      <p class="desc">Complete system scan, cleanup, and optimization for security and performance.</p>
+      <ul>
+        <li>Flat rate: <strong>$75</strong> for the first 2 hours.</li>
+        <li>Each additional hour: <strong>$15/hr</strong>.</li>
+        <li>Includes antivirus configuration and browser reset if needed.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>PC Setup & Data Transfer</h2>
+      <p class="desc">Setup for new computers, user accounts, system updates, and data transfer from your old device.</p>
+      <ul>
+        <li>Starting at <strong>$90</strong>.</li>
+        <li>Includes software installation, Windows updates, and printer setup.</li>
+        <li>Data migration from old system available as add-on.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Network & Wi-Fi Support</h2>
+      <p class="desc">Optimize or repair home and small business networks for faster, more reliable connectivity.</p>
+      <ul>
+        <li>Starting at <strong>$65</strong>.</li>
+        <li>Router configuration, security setup, and signal testing.</li>
+        <li>Assistance with home office or multi-device setups.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Small Business Support Plans</h2>
+      <p class="desc">Affordable monthly plans with maintenance, cloud backup, and remote assistance for small businesses.</p>
+      <ul>
+        <li>Custom quotes based on number of devices and support frequency.</li>
+        <li>Priority service and proactive system checks.</li>
+        <li>Cloud data management and backup monitoring available.</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>&copy; 2025 JSFrancisLegacy Computer Solutions — All Rights Reserved</footer>
+</main>
+</body>
+</html>
